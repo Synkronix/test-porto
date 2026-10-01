@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Ariansyah Fajar Saputra — Information Systems Portfolio</title>
+<meta name="description" content="Portfolio of Muhammad Ariansyah Fajar Saputra: database design, SQL, networking and software coursework, with the artifacts behind each project.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#080b14">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="atmosphere" aria-hidden="true"></div>
+<div class="progress" data-progress aria-hidden="true"></div>
+
+<header class="nav" data-nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Porto_Ari</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#skills">Skills</a>
+      <a href="#courses">Courses</a>
+    </nav>
+    <a class="nav-cta" href="#contact">
+      <span>Contact</span>
+      <span data-icon="arrow" data-icon-size="14" aria-hidden="true"></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ hero ============================ -->
+  <section class="hero wrap" id="top">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">Information Systems · Portfolio</p>
+        <h1 class="display" data-name>Muhammad Ariansyah Fajar Saputra</h1>
+        <p class="hero-sub" data-headline></p>
+        <p class="hero-bio" data-bio></p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">
+            <span>Explore the work</span>
+            <span data-icon="arrow" data-icon-size="15" aria-hidden="true"></span>
+          </a>
+          <a class="btn" href="#certificates">
+            <span data-icon="award" data-icon-size="15" aria-hidden="true"></span>
+            <span>Certificates</span>
+          </a>
+        </div>
+      </div>
+
+      <aside class="id-card" aria-label="Profile">
+        <div class="id-top">
+          <span class="id-mark" data-initials aria-hidden="true">MA</span>
+          <div>
+            <div class="id-name" data-name></div>
+            <div class="id-role" data-role></div>
+          </div>
+        </div>
+
+        <ul class="id-rows" data-facts></ul>
+
+        <ul class="id-rows">
+          <li>
+            <span class="k">Email</span>
+            <a data-email href="#">—</a>
+          </li>
+          <li>
+            <span class="k">GitHub</span>
+            <a data-github href="#">—</a>
+          </li>
+        </ul>
+
+        <p class="slot-note" data-slot-note hidden>
+          Contact details are placeholders. Update the <code>profiles</code> row
+          in the database to publish real links.
+        </p>
+      </aside>
+    </div>
+
+    <div class="metrics" data-metrics></div>
+  </section>
+
+  <!-- ============================ work ============================ -->
+  <section class="section wrap" id="work">
+    <div class="section-head reveal">
+      <p class="kicker">Selected work</p>
+      <h2>Coursework, but shipped as real artifacts</h2>
+      <p class="lede">
+        Twelve projects from my coursework, each backed by files that actually
+        exist — schema scripts, topology captures, reports and programs. Open any
+        one to see the artifacts and the skills it exercised.
+      </p>
+    </div>
+
+    <div data-spotlight class="reveal"></div>
+
+    <div class="index-tools">
+      <label class="search">
+        <span class="sr-only">Search projects</span>
+        <span data-icon="search" data-icon-size="15" aria-hidden="true"></span>
+        <input type="search" placeholder="Search projects, courses, skills…" data-search>
+      </label>
+      <div style="display:flex; gap:0.45rem; flex-wrap:wrap;" data-filters role="group" aria-label="Filter projects"></div>
+      <span class="index-count" data-work-count aria-live="polite"></span>
+    </div>
+
+    <ul class="work-list" data-work-list></ul>
+  </section>
+
+  <!-- ======================== certificates ======================== -->
+  <section class="section wrap" id="certificates">
+    <div class="section-head reveal">
+      <p class="kicker">Credentials</p>
+      <h2>Certificates</h2>
+      <p class="lede">
+        Space reserved for certifications as they are earned. Each card below is a
+        slot waiting for a real credential.
+      </p>
+    </div>
+
+    <div class="cert-note" data-cert-note hidden>
+      <span data-icon="spark" data-icon-size="16" aria-hidden="true"></span>
+      <span><strong><span data-cert-slots>0</span> slots are empty.</strong>
+      Nothing is shown as earned until it is filled in — no invented credentials.
+      To add one, edit the <code>CERTIFICATES</code> list in
+      <code>tools/generate_data.py</code> and re-run it.</span>
+    </div>
+
+    <div class="cert-grid" data-certs></div>
+
+    <p class="mono-label" style="margin-top:1.5rem;" data-cert-count></p>
+  </section>
+
+  <!-- ============================ skills ========================== -->
+  <section class="section wrap" id="skills">
+    <div class="section-head reveal">
+      <p class="kicker">Capabilities</p>
+      <h2>What the work actually exercised</h2>
+      <p class="lede">
+        Every skill carries a self-assessed proficiency from 1 to 5, evidenced by
+        the coursework behind it.
+      </p>
+    </div>
+    <div class="skill-groups reveal" data-skills></div>
+  </section>
+
+  <!-- =========================== courses ========================== -->
+  <section class="section wrap" id="courses">
+    <div class="section-head reveal">
+      <p class="kicker">Academic record</p>
+      <h2>The coursework behind it</h2>
+    </div>
+    <div class="course-grid reveal" data-courses></div>
+  </section>
+
+  <!-- =========================== contact ========================== -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <div class="reveal">
+        <p class="kicker">Contact</p>
+        <h2 style="margin-top:1rem;">Let's build <em>something</em>.</h2>
+        <p class="lede" style="margin-top:1.2rem;">
+          Open to internships, junior developer roles and coursework collaborations.
+          Email is the fastest way to reach me.
+        </p>
+      </div>
+
+      <div class="contact-links reveal">
+        <a class="contact-link" href="#" data-contact="email">
+          <span data-icon="mail" data-icon-size="18" aria-hidden="true"></span>
+          <span data-contact-value>—</span>
+          <span class="cl-kind">Email</span>
+        </a>
+        <a class="contact-link" href="#" data-contact="github">
+          <span data-icon="github" data-icon-size="18" aria-hidden="true"></span>
+          <span data-contact-value>—</span>
+          <span class="cl-kind">GitHub</span>
+        </a>
+        <a class="contact-link" href="#" data-contact="linkedin">
+          <span data-icon="linkedin" data-icon-size="18" aria-hidden="true"></span>
+          <span data-contact-value>—</span>
+          <span class="cl-kind">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot wrap">
+  <div class="foot-inner">
+    <div class="foot-meta">
+      <span>Muhammad Ariansyah Fajar Saputra — D3 Sistem Informasi 49-03</span>
+      <span>Project data generated from a live PostgreSQL database.</span>
+    </div>
+    <span>© <span data-year>2026</span></span>
+  </div>
+</footer>
+
+<!-- ========================= project drawer ====================== -->
+<div class="drawer" data-drawer hidden>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="drawer-top">
+      <div>
+        <p class="drawer-course" data-drawer-course></p>
+        <h3 id="drawer-title" data-drawer-title>Project</h3>
+      </div>
+      <button class="drawer-close" type="button" data-drawer-close aria-label="Close details">✕</button>
+    </div>
+
+    <p class="drawer-summary" data-drawer-summary></p>
+    <p class="drawer-body" data-drawer-body></p>
+
+    <dl class="drawer-meta" data-drawer-meta></dl>
+
+    <h4>Skills</h4>
+    <div class="work-skills" data-drawer-skills></div>
+
+    <h4>Artifacts</h4>
+    <ul class="artifact-list" data-drawer-artifacts></ul>
+  </aside>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
